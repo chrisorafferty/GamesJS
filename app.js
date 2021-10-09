@@ -30,6 +30,8 @@ $(document).ready(function() {
 
     const gameCanvas = $('#game-canvas')[0];
     const canvasContext = gameCanvas.getContext('2d');
+    const gameOverDiv = $('#game-over');
+    console.log(gameOverDiv);
     document.onkeydown = keyPressed;
 
     resetGame();
@@ -168,6 +170,8 @@ $(document).ready(function() {
         for(let i = 0; i < snakeSegments.length; i++) {
             setPixel(snakeSegments[i], SNAKE_DEATH_COLOUR);
         }
+
+        gameOverDiv.removeClass('hide');
     }
 
     function keyPressed(e) {
@@ -252,7 +256,8 @@ $(document).ready(function() {
 
         lastMoveTime = performance.now();
 
-        gameOver = false;        
+        gameOverDiv.addClass('hide');
+        gameOver = false;   
     }
 
     function runGameLoop() {

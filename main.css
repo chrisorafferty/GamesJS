@@ -7,12 +7,28 @@
     padding: 10px;
 }
 
-.game-pixel {
-    width: 10px;
-    height: 10px;
-    background-color: grey;
+.game-canvas {
+    position: relative;
 }
 
-.game-row {
-    display: flex;
+.game-over {
+    position: absolute;
+    text-align: center;
+}
+
+.game-over-heading {
+    font-size: xx-large;
+    font-family: Arial;
+    font-weight: bold;
+    text-shadow: -2px -2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, 2px 2px 0 #FFFFFF; 
+}
+
+.game-over-text {
+    font-size: x-large;
+    font-family: Arial;
+    text-shadow: -2px -2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, 2px 2px 0 #FFFFFF; 
+}
+
+.hide {
+    display: none;
 }
