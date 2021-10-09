@@ -1,0 +1,18 @@
+.game-border {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+}
+
+.game-pixel {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+}
+
+.game-row {
+    display: flex;
+}
